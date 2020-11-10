@@ -1,7 +1,4 @@
-for (let i = 1; i < 8; i++) {
-    if (i === 6) {
-        continue
-    }
-    console.log(i)
-}
+let twelve = "12.2px";
 
+console.log(parseInt(twelve));
+console.log(parseFloat(twelve));
