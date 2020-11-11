@@ -3,3 +3,5 @@
 Про методы строк - https://learn.javascript.ru/string
 
 Про методы чисел - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+Про массивы -https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array

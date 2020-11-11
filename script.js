@@ -1,23 +1,9 @@
-function first(){
-    setTimeout( function() {
-        console.log(1);
-    }, 500 );
-}
+let arr = [1, 15, 4],
+    i = arr.sort(compareNmu);
 
-function second(){
-    console.log(2);
-}
+    function compareNmu(a,b) {
+        return a-b;
+    }
 
-first();
-second();
-
-function learnJS(lang, callback) {
-    console.log("Я учу " + lang);
-    callback();
-}
-
-function done() {
-    console.log("Я прошёл третий урок!");
-}
-
-learnJS("JavaScript", done);
+    console.log(arr);
+    console.log(i);
