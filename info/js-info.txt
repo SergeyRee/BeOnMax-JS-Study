@@ -11,6 +11,28 @@ ___________________________________________________________________
 7 - var obj = {}; - Объект
 
 console.log(typeoff(varName)); - чтоб узнать тип данных
+console.log(typeof(String(4))); - чтоб преобразовать в строку -
+console.log(typeof("hello" + 5)); - чтоб преобразовать в строку + 
+
+console.log(typeof(Number('4'))); - чтоб преобразовать в число -
+console.log(typeof(+'4')); - чтоб преобразовать в число +
+console.log(typeof(5 + +'4')); - чтоб преобразовать в число +
+
+console.log(typeof(Boolean('5'))); - чтоб преобразовать в булин
+console.log(typeof(!!('5'))); - чтоб преобразовать в булин
+
+console.log(typeof(parseInt('15px', 10))); - чтоб преобразовать в число
+let ans = +prompt("Hello", ''); - чтоб преобразовать в число
+
+0, '', null, undefined, NaN; - это всегда false всё остальное всегда true
+let switcher = null;
+if(switcher){
+    console.log("Working..");
+}
+switcher = 1;
+if(switcher){
+    console.log("Working..");
+}
 ___________________________
 let person = {
     name: "John",

@@ -1,0 +1,51 @@
+document - встроенный объект
+
+______________________________________________________________
+методы document:
+_______________________________________________
+getElementById('id') - выбрать элемент по ид
+getElementsByTagName('TagName') - выбрать элементы по тэгу, и получаем псевдомассив эллементов 
+getElementsByClassName('class') - выбрать элементы по классу, и получаем псевдоколлекцию эллементов
+querySelectorAll('selector('.'/'#')name') - выбрать элементы по селектроу, и получаем псевдомассив данных
+querySelector('.heart'); - выбирает первый эллемент
+_______________________________________________
+
+getElementById('id') - выбрать элемент по ид
+
+let box = document.getElementById('box');
+console.log(box);
+_______________________________________________
+
+getElementsByTagName('TagName') - выбрать элементы по тэгу, и получаем псевдомассив эллементов
+
+let btn = document.getElementsByTagName('button');
+console.log(btn);
+console.log(btn[0]);
+_______________________________________________
+getElementsByClassName('class') - выбрать элементы по классу, и получаем псевдоколлекцию эллементов
+
+let circle = document.getElementsByClassName('circle');
+console.log(circle);
+console.log(circle[2]);
+_______________________________________________
+querySelectorAll('selector('.'/'#')name') - выбрать элементы по селектроу, и получаем псевдомассив данных
+
+let heart = document.querySelectorAll('.heart');
+console.log(heart);
+console.log(heart[1]);
+
+let enotherHeart = document.querySelectorAll('.wrapper .heart');
+console.log(enotherHeart);
+console.log(enotherHeart[1]);
+_______________________________________________
+querySelector('.heart'); - выбирает первый эллемент
+
+let oneHeart = document.querySelector('.heart');
+console.log(oneHeart);
+_______________________________________________
+_______________________________________________
+_______________________________________________
+_______________________________________________
+_______________________________________________
+_______________________________________________
+

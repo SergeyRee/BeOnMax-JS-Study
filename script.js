@@ -1,15 +1,5 @@
-
-    let soldier = {
-        health: 400,
-        armor: 100
-    };
-
-    let john = {
-        health: 100
-    }
-
-    john.__proto__ = soldier;
-
-    console.log(john); 
-    console.log(john.armor); 
-    console.log(soldier); 
+let box = document.getElementById('box'),
+    btn = document.getElementsByTagName('button'),
+    circle = document.getElementsByClassName('circle'),
+    hart = document.querySelectorAll('.heart'),
+    oneHeart = document.querySelector('.heart');

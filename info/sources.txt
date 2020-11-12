@@ -9,3 +9,5 @@
 Функции-конструкторы - https://learn.javascript.ru/constructor-new
 
 Классы -  https://learn.javascript.ru/classes
+
+Про типизацию - https://habr.com/ru/post/308484/
