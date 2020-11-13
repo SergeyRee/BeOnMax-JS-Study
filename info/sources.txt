@@ -11,3 +11,11 @@
 Классы -  https://learn.javascript.ru/classes
 
 Про типизацию - https://habr.com/ru/post/308484/
+
+события - https://learn.javascript.ru/introduction-browser-events
+
+addEventListener() - https://developer.mozilla.org/ru/docs/Web/API/EventTarget/addEventListener
+
+Про даты в JS - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+Про disabled - https://www.w3schools.com/tags/att_disabled.asp
