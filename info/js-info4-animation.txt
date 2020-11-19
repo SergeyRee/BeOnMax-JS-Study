@@ -1,0 +1,74 @@
+setTimeout(); - чтоб установить задержку выполнения
+clearTimeout(); - для отмены
+setInterval(); - для установки повторения
+____________________________________________________
+setTimeout(sayHello, 3000);
+
+function sayHello() {
+    alert("Hello world");
+}
+____________________________________________________
+let timerID = setTimeout(sayHello, 3000);
+clearTimeout(timerID);
+
+function sayHello() {
+    alert("Hello world");
+}
+____________________________________________________
+let timerID = setInterval(sayHello, 3000);
+
+function sayHello() {
+    console.log("Hello world");
+}
+____________________________________________________
+let timerId = setTimeout(function log() { -рекурсивный сет тайм аут, чтоб выполнялся без задержки
+    console.log("Hello");
+    setTimeout(log, 2000);
+});
+____________________________________________________
+let btn = document.querySelector('.btn'),
+    elem = document.querySelector('.box');
+
+function myAnimation() {
+    let pos = 0;
+
+    let id = setInterval(frame, 10);
+        function frame () {
+        if(pos == 300) {
+            clearInterval(id);
+        } else {
+            pos++;
+            elem.style.top = pos + 'px';
+            elem.style.left = pos + 'px';
+        }
+    }
+}
+
+btn.addEventListener('click', myAnimation);let btn = document.querySelector('.btn'),
+    elem = document.querySelector('.box');
+
+function myAnimation() {
+    let pos = 0;
+
+    let id = setInterval(frame, 10);
+        function frame () {
+        if(pos == 300) {
+            clearInterval(id);
+        } else {
+            pos++;
+            elem.style.top = pos + 'px';
+            elem.style.left = pos + 'px';
+        }
+    }
+}
+
+btn.addEventListener('click', myAnimation);
+
+let btnBlock = document.querySelector('.btn-block'),
+    btns = document.getElementsByClassName('button');
+
+btnBlock.addEventListener('click', function(event) {
+    if(event.targe && event.target.tagName == 'BUTTON') {
+        console.log("Hello");
+    }
+}); 

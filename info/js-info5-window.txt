@@ -1,0 +1,38 @@
+let box = document.querySelector('.box'),
+    btn = document.querySelector('button');
+
+let width = box.clientWidth,
+    height = box.clientHeight;
+
+console.log(width);
+console.log(height);
+
+btn.addEventListener('click', function() {
+    box.style.height = box.scrollHeight + 'px';
+});
+
+______________________________________________-
+let box = document.querySelector('.box'),
+    btn = document.querySelector('button');
+
+let width = box.clientWidth,
+    height = box.clientHeight;
+
+console.log(width);
+console.log(height);
+console.log(box.getBoundingClientRect()); - чтоб получить данные размеров и коардинаты 
+console.log(box.getBoundingClientRect().left); - чтоб получить коардинату одного эллемета
+
+console.log(document.documentElement.clientWidth);
+console.log(document.documentElement.clientHeght);
+console.log(document.documentElement.scrollTop); - чтоб ухнать сколько отмотано от верха страницы
+
+document.documentElement.scrollTop = 0; - чтоб отскролить  в саммый верх
+
+btn.addEventListener('click', function() {
+    box.scrollTop = 0;
+});
+
+______________________________________________
+scrollBy(0, 200);
+scrollTo(0, 200);

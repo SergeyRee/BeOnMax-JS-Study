@@ -1,0 +1,93 @@
+События для мобильной версии дисплея
+_____________________________________________________
+window.             - чтоб прописать обработчик события для экрана
+preventDefault();   - чтоб отключить стандартное поведение браузера 
+
+touchstart      - срабатывает при косании на какой то эллемент
+touchmove       - срабатывает после зажатия на экран и передвижении эллемента
+touchend        - срабатывает когда палец отпускает дисплей
+touchenter      - срабатывае при заходе пальца на кокой-либо эллемент
+touchleave      - срабатывает при покидании пальца от какого-либо эллемента
+touchcancel     - срабатывает когда точка косания не регестрируется на поверхности 
+
+target          - чтоб получить эллемент который нажали
+
+touches[0]      - чтоб указать первый палец
+changedTouches  - показывает список пальцев которые взаимодействовали с экраном
+targetTouches   - регестрирует лишь те пальцы которые взаимодействуют с определенными эллементами
+
+/pattern/       - патерн
+search()        - поиск
+match()         - поиск по совпадениям
+//i - флаг регистра
+//g - флаг глобальности
+//m - флаг многострочности
+
+// \d - найти одну цифру
+// \w -  все буквы
+// \s - найти все пробелы 
+
+// \D - найти не цифру
+// \W -  найти не букву
+// \S - найти не пробел 
+_____________________________________________________
+Функция для окна дисплея :
+window.addEventListener('DOMContentLoaded', function() { 
+    
+});
+____________________________________________________
+window.addEventListener('DOMContentLoaded', function() {
+    let box = document.querySelector('.box');
+
+    box.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        console.log('Red box: touchstart');
+        console.log(e.target);                  - чтоб получить эллемент который нажали
+        console.log(e.touches[0].target);
+        console.log(e.changedTouches);
+        console.log(e.targetTouches);
+    });
+
+     box.addEventListener('touchmove', function(e) {
+         e.preventDefault();
+         console.log('Red box: touchmove');
+     })
+
+     box.addEventListener('touchend', function(e) {
+         e.preventDefault();
+         console.log('Red box: touchend');
+     });
+
+     box.addEventListener('touchmove', function(e) {  - чтоб получить коардинату по оси X
+        e.preventDefault();
+        console.log('Red box: ' + e.touches[0].pageX);
+    });
+});
+_____________________________________________________
+let ans = prompt('Введите ваше имя');
+
+let reg = /n/i;  -патерн
+console.log(ans.search(reg)); - поиск регулярного патерна - n 
+________________________
+let reg = /n/ig;  -патерн
+console.log(ans.match(reg)); - поиск регулярного патерна - n 
+____________________________________________________
+let pass = prompt('sadasd');
+console.log(pass.replace(/./g, "*"));
+alert("12-34-56".replace(/-/g, ":"));
+_____________________________________________________
+let ans = prompt('Your name');
+let reg = /n/ig;
+console.log(reg.test(ans));
+
+_____________________________________________________
+let ans = prompt('Your number');
+let reg = /\d/g;
+console.log(ans.match(reg));
+
+_____________________________________________________
+let str = "My name is R2D2";
+console.log(str.match(/\w\d\w\w/));
+_____________________________________________________
+let str = "My name is R2D2"; - чтоб найти слэш
+console.log(str.match(/\//i));

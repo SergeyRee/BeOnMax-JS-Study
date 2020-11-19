@@ -1,22 +1,20 @@
-let btn = document.querySelectorAll('button'),
-    wrap = document.querySelector('.wrapper'),
-    link = document.querySelector('a');
+let box = document.querySelector('.box'),
+    btn = document.querySelector('button');
 
-// btn[0].addEventListener('click', function(event){
-//     console.log("Произошло событие: " + event.type + ' на эллементе ' + event.target )
-// });
+let width = box.clientWidth,
+    height = box.clientHeight;
 
-// wrap.addEventListener('click', function() {
-//     console.log("Произошло событие: " + event.type + ' на эллементе ' + event.target )
-// });
+console.log(width);
+console.log(height);
+console.log(box.getBoundingClientRect().left);
 
-link.addEventListener('click', function(event) {
-    event.preventDefault();
-    console.log("Произошло событие: " + event.type + ' на эллементе ' + event.target )
+console.log(document.documentElement.clientWidth);
+
+
+btn.addEventListener('click', function() {
+    box.scrollTop = 0;
 });
 
-btn.forEach(function(item) {
-    item.addEventListener('mouseleave', function(){
-        console.log('Out');
-    });
-});
+scrollBy(0, 200);
+
+scrollTo(0, 200);
