@@ -46,3 +46,5 @@ Arrow functions - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference
 
 классы - http://jsraccoon.ru/es6-classes
 классы - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes
+
+Spread-операторы - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax

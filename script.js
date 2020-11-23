@@ -1,13 +1,10 @@
-class Renctangle {
-    constructor(height, width) {
-        this.height = height;
-        this.width = width;
-    }
-    calcArea() {
-        return this.height * this.width;
-    }
-}
+function log(a, b, c) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(a + b + c);
+};
 
-const square = new Renctangle(10, 10);
+let numbers = [2, 5, 7];
 
-console.log(square.calcArea());
+log(...numbers);
