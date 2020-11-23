@@ -1,3 +1,13 @@
+class Renctangle {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+    calcArea() {
+        return this.height * this.width;
+    }
+}
 
+const square = new Renctangle(10, 10);
 
-class Renctangle {}
+console.log(square.calcArea());
