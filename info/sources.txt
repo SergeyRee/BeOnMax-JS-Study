@@ -34,3 +34,15 @@ addEventListener() - https://developer.mozilla.org/ru/docs/Web/API/EventTarget/a
 Функции-конструкторы - https://learn.javascript.ru/constructor-new
 Классы - https://learn.javascript.ru/classes
 Большой гайд по this - https://tproger.ru/translations/javascript-this-keyword/
+
+Шпаргалка по ES6 - https://cheatography.com/romansemko/cheat-sheets/ecmascript-6-es6/pdf_bw/
+ES6 по-человечески - https://habr.com/ru/post/305900/
+let - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let
+const - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const
+
+Arrow functions - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+Параметры по умолчани - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters
+
+классы - http://jsraccoon.ru/es6-classes
+классы - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes
